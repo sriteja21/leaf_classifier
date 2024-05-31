@@ -35,7 +35,7 @@ st.markdown(
     """
     <style>
     /* Align text in the middle */
-    .stApp, .stMarkdown, .stTextInput > div, .stTextInput > div > div {
+    #leaf-classifier> div, .stTextInput > div > div {
         display: flex;
         justify-content: center;
         align-items: center;
