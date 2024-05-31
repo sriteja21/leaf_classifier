@@ -30,6 +30,18 @@ def classify_leaf(img):
 # Streamlit application
 st.title("Leaf Classifier")
 
+# Setting background color
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: #B3F9A8;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 uploaded_img = st.empty()
 
 # Upload image and classify
@@ -44,4 +56,3 @@ if uploaded_file is not None:
 # Clear button
 if st.button("Clear"):
     uploaded_img.empty()
-
