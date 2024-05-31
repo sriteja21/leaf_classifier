@@ -30,12 +30,15 @@ def classify_leaf(img):
 # Streamlit application
 st.title("Leaf Classifier")
 
-# Setting background color
+# Setting CSS style to align text in the middle
 st.markdown(
     """
     <style>
-    .reportview-container {
-        background: #B3F9A8;
+    /* Align text in the middle */
+    .stApp, .stMarkdown, .stTextInput > div, .stTextInput > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     </style>
     """,
